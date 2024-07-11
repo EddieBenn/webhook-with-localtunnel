@@ -1,7 +1,6 @@
 const generateAccessToken = require("../Utils/helpers");
 
 function handleWebhook(req, res) {
-  //   generateAccessToken(req.method, req.url, req.headers["x-cs-timestamp"]);
   const body = req.body;
   // Your webhook logic here
   res.status(200).json({ message: "Webhook received successfully", body });
